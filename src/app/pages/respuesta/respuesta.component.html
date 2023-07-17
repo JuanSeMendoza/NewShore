@@ -1,0 +1,26 @@
+<h1>Respuesta</h1>
+<hr>
+<div class="row">
+    <div class="col">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>origen</th>
+                    <th>destino</th>
+                    <th>flighcarrier</th>
+                    <th>flightnumber</th>
+                    <th>precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let vuelo of vuelos" >
+                    <td>{{ vuelo.departureStation}}</td>
+                    <td>{{ vuelo.arrivalStation}}</td>
+                    <td>{{ vuelo.flightCarrier}}</td>
+                    <td>{{ vuelo.flightNumber}}</td>
+                    <td>{{ vuelo.price}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
